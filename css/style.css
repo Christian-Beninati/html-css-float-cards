@@ -1,9 +1,36 @@
+/* css reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* custom properties */
+:root {
+    --title-color: #e53170;
+    --card-bgc: #000000;
+    --email-color: #60c1f0;
+    --name-job-color: #ffffff;
+}
+
+/* generics */
 body{
     font-family: 'Fredoka', sans-serif;
 }
+
+
+/* header */
+
+
+
+/* utilities */
+
+
+
+
+/* row */
+
+
+
+
+/* card */
