@@ -19,9 +19,12 @@ body{
 }
 
 /* header */
-header, p {
-    padding: 40px;
+ header > p, header > h1 {
     text-align: center;
+}
+
+header > h1 {
+    padding:40px;
 }
 
 header > h1 {
@@ -30,17 +33,69 @@ header > h1 {
     font-size: 45px;
 }
 
+
 /* utilities */
 .container { 
-max-width: 1100px;
-margin: 0 auto;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
+img {
+    height: 100px;
+    float: left;
+    padding-right: 10px;
+}
 
+.name, .job {
+    color: var(--name-job-color);
+}
 
-/* row */
+a {
+    text-decoration: none;
+    color: var(--email-color);
+    
+}
 
+.card h1 {
+    padding-top: 10px;
+}
 
+section {
+    margin-top: 50px;
+}
 
-
+/* row clearfix */
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+ 
 /* card */
+.column{
+    float: left;
+    width: calc(100% / 3 );
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: var(--card-bgc);
+}
+
+.card > h1 {
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.card > p {
+    padding-bottom: 3px;
+}
+
+/* card clearfix */
+.card::after {
+    content: '';
+    display: table;
+    clear: both;
+    line-height: 100px;
+}
